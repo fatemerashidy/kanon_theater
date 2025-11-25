@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کانون تأتر - دانشگاه اردکان</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/iransans-font@v2.0.0/dist/font-face.css');
+
+    body {
+      margin: 0;
+      font-family: 'IRANSans', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #fdfbf6, #f8f3e7);
+      overflow-x: hidden;
+      direction: rtl;
+    }
+
+    /* هدر نسخه اول */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(150deg, #000000, #ff0000);
+      color: #fff;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* بخش اصلی */
+    main {
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .box {
+      background: rgba(0, 0, 0, 0.353);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 6px 18px rgba(255, 0, 0, 0.671);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      color: #ffffff;
+    }
+
+    .box:hover {
+      background: #000000;
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(255, 0, 0, 0.71)
+    }
+
+    .box h2 {
+      margin: 0;
+    }
+
+    .box .content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+      margin-top: 0;
+    }
+
+    .box.active .content {
+      max-height: 600px;
+      opacity: 1;
+      margin-top: 10px;
+    }
+
+    /* باکس راه‌های ارتباطی */
+    .contact-box {
+      text-align: center;
+      cursor: default;
+      color: #f8f3e7;
+    }
+
+    .contact-box:hover {
+      background: rgb(0, 0, 0);
+      transform: none;
+      box-shadow: 0 6px 18px rgba(255, 0, 0, 0.671);
+    }
+
+    /* دکمه‌ها */
+    .btn {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 20px;
+      border-radius: 30px;
+      background: #ff0000;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffffff;
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+
+    /* فوتر */
+    footer {
+      background: linear-gradient(130deg, #000000, #ff3737);
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer img {
+      height: 40px;
+      margin: 0 15px;
+    }
+  </style>
+
+</head>
+<body style="font-family:Arial, Helvetica, sans-serif; background-image: url('s.jpeg');  background-repeat: no-repeat;
+background-size: cover; background-position: center;">
+
+  <!-- هدر نسخه اول -->
+  <header style="font-family:Arial, Helvetica, sans-serif;">
+    <img src="thearte.png" alt="لوگوی کانون کتاب ترنج">
+    <h1>کانون تأتر - دانشگاه اردکان</h1>
+    <p>جایی که خیــال ، صحــــنه می‌شـــود 🎭</p>
+  </header>
+
+  <!-- محتوای اصلی -->
+  <main>
+ 
+
+    <div class="box" onclick="toggleBox(this)">
+      <h2>🎭 شعار و معرفی کوتاه</h2>
+      <div class="content">
+        <p>
+            <h4>کانون تئاتر دانشگاه اردکان🎭</h4>
+            جایی که خیــال ، صحــــنه می‌شـــود
+            و هر سکوت ، آغاز یک روایت است...</p>
+        <br>
+        <p>کانون تئاتر دانشگاه جاییست برای دور هم جمع شدن دانشجوهایی که هنر رو دوست دارن.اینجا می‌تونی نویسندگی، بازیگری، کارگردانی و اجرای نمایش رو تجربه کنی، ایده‌هاتو عملی کنی و با یه تیم هنری و خلاق کار کنی.</p>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <h2>🤹🏻‍♂️ فعالیت‌های کانون</h2>
+      <div class="content">
+        <p> 🎭 برگزاری کارگاه‌های بازیگری<br>
+            🎓 اجرای نمایش‌های دانشجویی <br>
+            👥 تشکیل گروه‌های تئاتری<br>
+            📄 برگزاری رویدادهای هنری مثل شب‌تئاتر و خوانش‌متن<br>
+            💡 حمایت از ایده‌های نمایشی دانشجوها<br><br>
+            🎉 و کلی برنامه‌های دیگر...🌟<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <h2>✨ نقش اعضا و مشارکت</h2>
+      <div class="content">
+      <p>«ترنج» فقط یک کانون نیست؛ یه جمع صمیمی از آدم‌هاییه که باور دارن هر فکر، ذوق و حضور کوچکی می‌تونه تغییری بزرگ بسازه.
+اینجا هرکسی نقشی داره؛ یکی می‌نویسه، یکی صداش رو به پادکست می‌سپاره، یکی ایده‌ می‌ده و یکی لبخندش رو به جمع هدیه می‌کنه.
+<br><br>
+ما باهم ترنج رو می‌سازیم ؛ چون باور داریم «ترنج» به اندازه‌ی نفس‌های گرم اعضاش زنده است.
+<br><br>
+اگر تو هم اهل خوندن، ساختن و ایده پردازی هستی ، جات اینجا خالیه 🍊</p>
+      </div>
+    </div>
+
+    <div class="box contact-box">
+      <h2>🔗 راه‌های ارتباطی با ما</h2>
+      <!-- <a href="https://eitaa.com/torrangg" class="btn">ایتا</a> -->
+      <a href="https://t.me/theater_arduni" class="btn">تلگرام</a>
+      <a href="https://www.instagram.com/theater_arduni?igsh=MXJvM2N1Z3dyZzh2cg==" class="btn">اینستاگرام</a>
+      <br>
+      <h6>برای ورود به تلگرام و پیج های اینستاگرامی حتماvpnخود را روشن کنید!!</h6>
+    </div>
+  </main>
+
+  <!-- فوتر -->
+  <footer>
+    <img src="logo-uni.png" alt="لوگو دانشگاه"style="width: 17%;height: 11%;">
+    <img src="thearte.png" alt="لوگو تئاتر" style="width: 25%;height: 25%;">
+   
+  </footer>
+
+  <script>
+    function toggleBox(box) {
+      box.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
